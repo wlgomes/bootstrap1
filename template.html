@@ -1,22 +1,10 @@
 <!doctype html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Página Bootstrap 1</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link href="css/moveme.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-
     <style>
         .grey{
             background-color: #CCC;
@@ -26,12 +14,24 @@
             height: 1500px;
         }
     </style>
+    <title>Bootstrap 101 Template</title>
 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.in.css" rel="stylesheet" media="screen">
+    <link href="css/moveme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class = "navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -39,33 +39,53 @@
         </button>
         <a class="navbar-brand" href="index.html">MoveMe</a>
     </div>
-    <div class="navbar-collapse.collapse">
+    <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toogle" data-toggle="dropdown">Social<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                    <li><a href="http://www.facebook.com">Facebook</a></li>
+                    <li><a href="http://www.twitter.com">Twitter</a></li>
+                    <li><a href="https://plus.google.com">Google+</a></li>
+                    <li><a href="http://www.linkedin.com">LinkedIn</a></li>
                 </ul>
             </li>
         </ul>
     </div>
 </nav>
-
+<!-- End Navigation -->
 <div class="intro-block">
     <div class="container">
         <div class="row">
             <div class="col-xs-3">
                 <img class="img-responsive tpad" src="img/moveMe.png">
             </div>
-            <div class="col-xs-3">
-                <h1>MOVE ME<span class="text-muted">&raquo; Your travel Companion</span></h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci asperiores delectus explicabo ipsa magni quae repellat ut? Consectetur iste libero magnam maiores molestiae odio pariatur quidem, quod tempora voluptas?umilis impedit at quos vel velit.</p>
+            <div class="col-xs-9">
+                <h1>MOVE ME <span class="text-muted">&raquo; Your Travel Companion</span></h1>
+                <p class="lead">There's no earthly way of knowing which direction we are going.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Intro Text -->
+<div class="container">
+    <div class="row">
+    </div>
+</div>
+<!-- End Page Content -->
+<div class="marketing">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="img-responsive" src="img/app.png">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="tpad">ALWAYS ON HAND</h3><hr>
+                <p>There's no knowing where we're rowing, or which way the river's flowing. Is it raining? Is it snowing? Is a hurricane a-blowing? Not a speck of light is showing, so the danger must be growing. Are the fires of hell a-glowing? Is the grisly reaper mowing? Yes, the danger must be growing, 'cause the rowers keep on rowing, and they're certainly not showing any signs that they are slowing.</p>
             </div>
         </div>
     </div>
@@ -76,5 +96,5 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
-
 </html>
+

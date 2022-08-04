@@ -1,9 +1,12 @@
 .intro-block{
-    background: url(../img/purpalt.png) repeat;
+    background: url(../img/PURPALT.PNG) repeat;
     padding: 100px 15px 60px;
     color: #fff;
 }
 .text-muted{
     color: #e9e6df;
     font-weight: 100;
+}
+.tpa{
+    padding-top: 20px;
 }
